@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello, you are on the 2nd page</title>
+        <style>
+            .wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            h3{
+                color:darkviolet;
+                font-size:25px
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div>
+                <form action="https://www.google.com/search" method="GET" style="margin: 20px; text-align: center;;">
+                    <label for="inp1"><h3>Type here the name of the image you want to find: </h3></label>
+                    <input type="text" id="inp1" name="q" style="border-radius: 15px; margin-bottom: 10px;">
+                    <input type="hidden" name="tbm" value="isch"><br>
+                    <input type="submit">
+                </form>
+            </div>
+            <div></div>
+            <div style="text-align: center;">
+                <a href=""> <h3>Click here to come back to usual search</h3></a>
+                <br>
+                <a href=""><h3>Come here if you want to use the advanced search</h3></a>
+            </div>
+        </div>
+    </body>
+</html>

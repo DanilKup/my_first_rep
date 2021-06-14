@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            label{
+                margin-left: 25px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 220px 200px 1fr;
+                align-items:center;
+            }
+            .find_pages{
+                font-size: large;
+                color: black;
+            }
+            .container>div{
+                
+                padding:10px
+                
+            }
+            .first{
+                text-align: left;
+                font-size: 13px;
+            }
+            .second{
+                justify-content: stretch;
+                grid-auto-rows: auto;
+            }
+            .third{
+                font-size: 13px;
+                color: rgb(129, 120, 120);
+            }
+            .container>div{
+                z-index: 1;
+                
+               
+            }
+            .to_do{
+                font-size: medium;
+                color: rgb(243, 235, 235);
+            }
+        
+            input[type="submit"]{
+                background-color: rgb(26, 126, 249);
+                color: white;
+
+            }
+            input{
+                margin: 10px;
+            }
+            h3{
+                font-family:'Times New Roman', Times, serif;
+                color:red;
+            }
+            input{
+                border-radius: 0;
+                border: 1px rgb(255, 255, 255) groove;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://www.google.com/search" method="GET">
+            <div class="container">
+                <div>
+                    <h3>Advanced search</h3>
+                </div>
+                <div></div>
+                <div style="text-align: right; color:darkviolet; font-size:25px">
+                    <a href="">Back to normal search</a><br>
+                    <a href="">Back to image search</a>
+                </div>
+                
+                
+                </canvas>
+            
+                <div id="find_pages">
+                    Find pages with
+                </div>
+                <div>
+                
+                </div>
+                <div id="to_do" style="padding: 0px;">
+                    To do this in the search box.
+                </div>
+                <div class="first">
+                    <label for="inp1">all these words: </label><br>
+                </div>
+                <div class="second">
+                    <input type="text" id="inp1" name="as_q">
+                </div>
+                <div class="third">
+                    Type the important words: dog cat flat<br>
+                </div>
+                <div class="first">
+                    <label for="inp2">this exact word or phrase:</label><br>
+                </div>
+                <div class="second">
+                    <input type="text" id="inp2" name="as_epq">
+                </div>
+                <div class="third">
+                    Put exact words in quotes: "Web programning"<br>
+                </div>
+                <div class="first">
+                    <label for="inp3">any of these words:</label><br>
+                </div>
+                <div class="second">
+                    <input type="text" id="inp3" name="as_oq">
+                </div>
+                <div class="third">
+                    Type OR between all the words you want: small OR large<br>
+                </div>
+                <div class="first">
+                    <label for="inp4">none of these words:</label><br>
+                </div>
+                <div class="second">
+                    <input type="text" id="inp4" name="as_eq">
+                </div>
+                <div class="third">
+                    Put minus signs just before words you don't want: -gold, -ferrum<br> 
+                </div>
+                <div>
+
+                </div>
+                <div style="text-align:end;">
+                    <input type="submit"; value="Advanced Search" >
+                </div>
+                <div>
+
+                </div>
+                
+            </div>
+            
+            
+        </form>
+
+    </body>
+</html>
